@@ -4,7 +4,7 @@ Repositori ini adalah repositori dasar yang akan dijadikan basis oleh setiap kel
 
 Pengumpulan Tugas:
 - Sebutkan URL repositori yang akan dinilai
-  - Repositori ini harus merupakan fork dari repo ini (baik secara langsung atau tidak langsung)
+  - Repositori peserta kuliah harus merupakan fork dari repo ini (harus secara langsung)
 - Sebutkan anggota dari kelompok (NIM NAMA MAIL GITHUB_ID)
 - Kontributor dari repositori tersebut HANYA anggota kelompok yang bersangkutan
 
@@ -15,3 +15,4 @@ Rule dan Konvensi:
 - MEMEBER.md - berisi NIM NAMA MAIL GITHUB_ID dari anggota grup ini
 - src/ - berisi semua kode sumber dari aplikasi yang akan anda kumplukan
 - docs/ - berisi dokumentasi dari aplikasi, jika diperlukan
+- db/ - berisi file sql
