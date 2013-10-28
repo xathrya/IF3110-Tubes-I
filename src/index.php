@@ -2,7 +2,8 @@
 	/*  Preprocess
 	 *
 	 *  Menentukan controller mana yang dipakai, berdasarkan input.
-	 */	
+	 */
+	 include("include.php");
 	$Controller = null;
 	
 	$title = "Portal Ruko Serba Ada - RuSerBa";
@@ -44,13 +45,14 @@
 				<LI><A href="?do=window_shop&cat=buah">Buah</A></LI>
 				<LI><A href="?do=window_shop&cat=minyak">Minyak</A></LI>
 				<LI><A href="?do=window_shop&cat=bumbu">Bumbu Dapur</A></LI>
-				<LI><A href="?do=window_shop&cat=bumbu">Bumbu Dapur</A></LI>
 			</UL>
 		</NAV>
 	</HEADER>
 
 	<SECTION>
-		
+	<?php
+		// View
+	?>
 	</SECTION>
 
 	<FOOTER>
@@ -61,6 +63,15 @@
 ?>
 <?php
 	// Controller
+	if(isset($_GET['do'])) {
+		$do = $_GET['do'];
+		switch($do) {
+			case "register" : {
+				$Controller = new RegisterView();
+				$Controller->output();
+			} break;
+		}
+	}
 ?>
 </BODY>
 </HTML>
