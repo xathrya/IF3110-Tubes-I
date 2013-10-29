@@ -10,7 +10,8 @@
 	 *
 	 *  Menentukan controller mana yang dipakai, berdasarkan input.
 	 */
-	$controller = '';
+	 include("include.php");
+	$Controller = null;
 	$ctrl_obj = null;
 	$title = "RuSerBa";
 	$url = "/wbd";
@@ -193,6 +194,15 @@
 ?>
 <?php
 	// Controller
+	if(isset($_GET['do'])) {
+		$do = $_GET['do'];
+		switch($do) {
+			case "register" : {
+				$Controller = new RegisterView();
+				$Controller->output();
+			} break;
+		}
+	}
 ?>
 </BODY>
 </HTML>
